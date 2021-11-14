@@ -14,9 +14,10 @@ connection.connect(function(error, results) {
     }
 });
  
-connection.query('SELECT * from product', function (error, results) {
+connection.query('SELECT * from products', function (error, results) {
   if (error) throw error;
-  console.log('ROWs are: ', results[0].product_name);
+  console.log(results);
+  console.log('ROWs are: ', results[0].name);
 });
  
 connection.end();

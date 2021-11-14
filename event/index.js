@@ -15,3 +15,9 @@ event.on('sayMyName', (status, msg) => {
 });
 
 event.emit('sayMyName', 200, 'ok');
+
+event.on('sayHi', () => {
+    console.log('Hello World');
+});
+
+event.emit('sayHi', 200, 'ok');

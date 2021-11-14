@@ -10,3 +10,6 @@ console.log(mob);
 
 const pass = validator.isStrongPassword('975448859@Ss');
 console.log(pass);
+
+const newEmail = validator.isEmail('shubham@gmail');
+console.log(newEmail);

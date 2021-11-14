@@ -1,10 +1,10 @@
 const fs = require("fs");
 
 // ========================= Create directory =========================
-/*fs.mkdir("shubham", (err) => {
+fs.mkdir("shubham", (err) => {
     console.log('Folder is created');
     console.log(err);
-});*/
+});
 
 // ========================= Create a new file =========================
 /*fs.writeFile("read_async.txt", "My first create file using node module async", (err) => {
@@ -41,6 +41,6 @@ fs.unlink('for_delete.txt', (err) => {
 });*/
 
 // ========================= Delete folder =========================
-fs.rmdir('shubham', (err) => {
+/*fs.rmdir('shubham', (err) => {
     console.log("folder remove successfully.");
-});
+});*/

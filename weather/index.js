@@ -19,9 +19,10 @@ const replaceVal = (file, val) => {
 }
 
 const server = http.createServer((req, res) => {
-    if (req.url == '/') {
+    if (req.url == '/' || req.url == '/home' || req.url == '/home/:id') {
         //res.end('Hello from dashboard');
-        requests('https://api.openweathermap.org/data/2.5/weather?q=pune&appid=<API KEY>&units=metric')
+        console.log(req.url);
+        requests('https://api.openweathermap.org/data/2.5/weather?q=pune&appid=6649001e3a1d74619e93a7de284f75d1&units=metric')
             .on('data', (chunk) => {
                 const objData = JSON.parse(chunk);
                 const arrData = [objData];
